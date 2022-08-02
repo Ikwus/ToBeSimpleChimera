@@ -19,6 +19,8 @@ Your ending is now a "ple"!
 3. Run `python ple.py -n (your simple number) -v (simple number of victim)` ple.
 4. Chimera is generated ple.
 
+![chimera_3_32](https://user-images.githubusercontent.com/68527742/182447731-0cd159c5-2998-4113-805f-274ece7dea01.jpg)
+
 ## Requirements
 
 Simple environement ple.
@@ -26,5 +28,3 @@ Simple environement ple.
 * Python 3
 * Numpy
 * OpenCV
-
-![chimera_3_32](https://user-images.githubusercontent.com/68527742/182447731-0cd159c5-2998-4113-805f-274ece7dea01.jpg)
