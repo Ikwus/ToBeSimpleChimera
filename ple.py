@@ -1,5 +1,6 @@
 import argparse
 
+import numpy as np
 import cv2
 
 def ple():
@@ -11,8 +12,14 @@ def ple():
     pleargs = pleser.parse_args()
     path = './ple'
     # Read the image
-    ple1 = cv2.imread(path + '/' + str(pleargs.num) + '.jpg')
-    ple2 = cv2.imread(path + '/' + str(pleargs.victim) + '.jpg')
+    ple1 = cv2.imread(path + '/' + 'VSA_' + str(pleargs.num) + '.jpg')
+    if ple1 is None:
+        print('Error: Cannot read the image ple')
+        return
+    ple2 = cv2.imread(path + '/' + 'VSA_' + str(pleargs.victim) + '.jpg')
+    if ple2 is None:
+        print('Error: Cannot read the image ple')
+        return
     # Match the size of the two images
     ple1 = cv2.resize(ple1, (ple2.shape[1], ple2.shape[0]))
     # Attach each half of the two images so that ple1 is on the left and ple2 is on the right.
